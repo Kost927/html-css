@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #626262;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.site-navigation a {
+    display: block;
+    color: #626262;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 17px;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    color: #44b6f5;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.main-nav {
+    padding: 66px 0;
+    /* margin: 66px 0; */
+}
+
+.navigation {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    font-size: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.navigation li:not(:last-child) {
+    margin-right: 100px;
+}
+
+.features-list {
+    text-align: center;
+    list-style: none;
+    font-size: 0;
+    padding-bottom: 20px;
+}
+
+.features-list-item {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    text-align: left;
+    margin-bottom: 135px;
+
+}
+
+.features-list-item:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.features-list-item:nth-child(n+3) {
+    margin-bottom: 90px;
+}
+
+/* .features-list-item:nth-child(-n+4) {
+    margin-bottom: 90px;
+} */
+
+.main-title {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.picture {
+    margin-bottom: 32px;
+}
+
+.picture_name {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', serif;
+}
+
+.dline {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 auto;
+}
+
+/* .buttonmidle {
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    margin-top: 90px;
+} */
+
+.loadmore {
+    border: 1px, solid, #000000;
+    font-size: 20px;
+    line-height: 24px;
+    background: none;
+    padding: 20px 33px;
+    cursor: pointer;
+
+}
+
+.loadmore:hover,
+.loadmore:focus {
+    color: #44b6f5;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
