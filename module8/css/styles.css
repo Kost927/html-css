@@ -1,0 +1,59 @@
+/* :root {
+    --main-font: "Montserrat", Arial, Helvetica, sans-serif;
+    --second-font: "Roboto Slab", sans-serif;
+    --third-font: "Vollkorn", sans-serif;
+    --main-font-color: #222222;
+    --second-font-color: #777777;
+    --fourth-font-color: #bbbbbb;
+    --main-color: #fed136;
+} */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #555555;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
