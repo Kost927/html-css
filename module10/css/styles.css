@@ -492,6 +492,10 @@ input[type="radio"].visually-hidden {
   transition: all 200ms linear;
 }
 
+.team-list__item {
+  width: 380px;
+}
+
 .team-list__item:hover .team-list__item__photo--ovarlay,
 .team-list__item:focus .team-list__item__photo--ovarlay {
   opacity: 1;
