@@ -156,6 +156,12 @@ input[type="radio"].visually-hidden {
   background: none;
   outline: none;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.menu-list__item-icon-button:hover,
+.menu-list__item-icon-button:focus {
+  transform: scale(1.5);
 }
 
 .menu-list__item-icon:hover,
@@ -351,13 +357,39 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list__item {
+  background-repeat: no-repeat;
+  background-position: 30px 0;
   width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.services-list__item:not(:nth-child(n + 3)) {
+.services-list__item--clock {
+  background-image: url(../images/iconspic/clock.svg);
+}
+
+.services-list__item--graph {
+  background-image: url(../images/iconspic/graph.svg);
+}
+
+.services-list__item--computer {
+  background-image: url(../images/iconspic/computer.svg);
+}
+
+.services-list__item--book {
+  background-image: url(../images/iconspic/book.svg);
+}
+
+.services-list__item--house {
+  background-image: url(../images/iconspic/house.svg);
+}
+
+.services-list__item--image {
+  background-image: url(../images/iconspic//image.svg);
+}
+
+.services-list__item:not(:nth-child(n + 4)) {
   margin-bottom: 100px;
 }
 
@@ -399,7 +431,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list__item__wrapper {
-  padding-left: 30px;
+  padding-left: 90px;
 }
 
 /* TEAM SECTION */
