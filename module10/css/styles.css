@@ -81,6 +81,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .logotype {
@@ -99,13 +100,17 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
+.menu-list__item {
+  margin-right: 60px;
+}
+
 .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.menu-list__item {
+.menu-list__item:not(:last-child) {
   margin-right: 60px;
 }
 
@@ -151,6 +156,14 @@ input[type="radio"].visually-hidden {
   transition: all 200ms linear;
 }
 
+.button-list {
+  display: flex;
+}
+
+.button-list__item:not(:last-child) {
+  margin-right: 60px;
+}
+
 .menu-list__item-icon-button {
   border: none;
   background: none;
@@ -170,10 +183,6 @@ input[type="radio"].visually-hidden {
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
   transition: all 200ms linear;
-}
-
-.menu-list__item-icon-button:not(:last-child) {
-  margin-right: 60px;
 }
 
 .menu-list__item-icon--shopping-cart {
@@ -215,7 +224,7 @@ input[type="radio"].visually-hidden {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom: 126px;
+  padding: 200px 0 126px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -229,7 +238,7 @@ input[type="radio"].visually-hidden {
         from(rgba(252, 227, 138, 0.9)),
         to(rgba(243, 129, 129, 0.9))
       ),
-      url(../images/eagle.jpg);
+      url(../images/eagle@2x.jpg);
     background-image: -o-linear-gradient(
         bottom,
         rgba(252, 227, 138, 0.9),
@@ -252,7 +261,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: var(--main-font-color);
   text-align: center;
-  padding-top: 200px;
   margin: 0 0 126px 0;
 }
 
@@ -277,7 +285,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.template-section__button {
+.modal__button {
   display: block;
   background: none;
   border: 3px solid #ffffff;
@@ -296,7 +304,7 @@ input[type="radio"].visually-hidden {
   transition: all 200ms linear;
 }
 
-.template-section__button:hover {
+.modal__button:hover {
   background: var(--second-color);
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
@@ -306,12 +314,11 @@ input[type="radio"].visually-hidden {
 /* SERVICES SECTION */
 
 .services {
-  margin-bottom: 100px;
+  padding: 52px 0 100px;
 }
 
 .services-team-title {
   text-align: center;
-  padding-top: 52px;
   margin-bottom: 65px;
 }
 
